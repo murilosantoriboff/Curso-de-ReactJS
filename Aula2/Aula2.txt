@@ -1,0 +1,41 @@
+Como instalar o REACT?
+    - Para instalar o React vamos utilizar uma ferramenta chamada Crate React App
+    - Recebemos todos os arquivos da biblioteca e temos que executa-los
+    - Para utilizar precisamos do Node e do NPM
+    - Essa ferramenta também otimiza o app gerado para produção
+    - É possivel iniciar a aplicação com NPM START
+
+Vamos abrir o terminal e executar o seguinte comando:
+    - npm create-react-app 'Nome do projeto'
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd meu-projeto
+  npm start
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Explicando os arquivos do React
+
+README.md = Mostra como funciona o React e os seus comandos
+package.json = Dependencias das linhas do script que a gente executou
+
+Pastas:
+    node_modules = Todas as depencias do React, ou seja o que ele precisa para rodar
+    public = Arquivos iniciais, principalmente imagens e index.html
+    src = Vai ter nossa JS e nosso CSS, tendo como arquivo base o index.js

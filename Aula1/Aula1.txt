@@ -1,0 +1,10 @@
+Vamos fazer um site que regencia projetos feito com reactJS e API'S com JsonService.
+
+O que é React:
+    - É uma biblioteca JS para criação de interfaces
+    - Utilizado para construir SPA's (Single Page Application)
+    - Baseado em componentes
+    - Utiliza o JSX para renderizar o html
+    - Aplica o virtual DOM para realizar alterações no DOM
+    - Podemos adicionar um projeto ou criar um a partir dele
+
