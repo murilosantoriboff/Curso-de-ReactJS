@@ -1,2 +1,36 @@
 Entendendo JSX
 
+    - O JSX é como um HTML, mas no codigo JS
+    - É a principal maneira de escrever HTML no React
+    - Podemos Interpolar variáveis, insirindo ele entre {}
+    - É possivel também executar funcoes no JSX
+    - insirindo valores em atributos de tags também é válido em JSX
+
+Agora com o projeto aberto vamos trabalhar com JSX
+
+Quando a gente trabalha com JSX no react normalmente nós trabalhamos com a função dentro do App.js
+
+Vamos criar uma variavel e colocar no JSX para aparecer no front
+
+    const name = 'Murilo'
+
+    <p>Ola {name}</p>
+
+- Normalmente as variaveis que usamos no JSX, ou estamos processando o dado ou ta vindo de algum lugar
+
+Podemos executar ações matematicas dentro do JSX
+
+    <p>Soma {2+2}</p>
+
+Podemos criar funcoes também para usar o JSX
+    function sum(a,b) {
+        return a+b
+    }
+
+    <p>Soma {sum(8,7)}</p>
+
+Podemos mexer com atributos no JSX
+    const img = 'https://placeholder.com/150'
+
+    <img alt="Imagem" src={img}/>
+
