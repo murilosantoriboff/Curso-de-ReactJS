@@ -1,2 +1,37 @@
 Componentes
 
+    - Permite dividir a aplicação em partes
+    - Os Componentes renderizam o JSX (Assim como o App.js é um componente)
+    - Precisamos criar um arquivo de componente
+    - E importa-lo para utilizar
+    - Normalmente ficam em pastas chamadas components
+    - Precisam ser reutilizaveis
+
+Dentro do nosso SRC vamos criar uma pasta para colocar os components e vamo criar nosso HelloWorld.js
+
+Vamos criar uma funcao e colocar o nome que queremos para exportar
+
+    function HelloWorld() {
+        
+    }
+
+    export default HelloWorld
+
+Agora vamos retornar algo
+    return (
+        <div>
+            <p>Hello World</p>
+        </div>
+    )
+
+e dentro do nosso App.js vamos importar o arquivo e a funcao
+
+    import HelloWorld from './components/HelloWorld';
+
+e Precisamos aplicar isso dentro do nosso codigo
+
+    <(Nome da funcao)/>
+
+Vamo criar mais um componente chamado Frase.js
+
+E vamos importar dentro do nosso HelloWorld.js para ver como dar para usar componente dentro de componente
