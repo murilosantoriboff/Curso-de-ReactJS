@@ -1,2 +1,26 @@
 Insirindo Css (Css Modules)
 
+    - O css pode ser aplicado de forma global na aplicação por meio do arquivo index.css por exemplo
+    - Porém é possivel estilizar a nivel de componentes
+    - Utilizando o CSS modules para isso
+    - Basta criar um arquivo como: Componente.module.css
+    - E chamar o css no componente
+
+dentro do  nosso projeto vamos apagar o index.css e vamos criar um a nossa maneira
+
+Agora vamos alterar apenas um componente com css, o Frase.js
+
+Dentro da pasta components vamos criar um arquivo chamado Frase.module.css
+
+agora dentro desse arquivo podemos fazer as alterações para o Nosso Frase.js
+
+Mas precisamos importar dentro do nosso Frase.js
+
+    import styles from './Frase.module.css'
+
+Para colocar ele, é como colocar uma prop
+
+    <div className={styles.fraseContainer}>
+        <p>Este é um componente Frase</p>
+    </div>
+
