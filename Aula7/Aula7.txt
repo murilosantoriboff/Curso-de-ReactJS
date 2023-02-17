@@ -1,2 +1,26 @@
 Utilizando React fragments
 
+    - O react fragments permite a criacao de um componente sem o elemento pai
+    - O proposito é descomplicar os nós do DOM
+    - A sintaxe é <> e </>, não ha um nome para tag
+    - Criamos no própio JSX
+
+Pratica
+
+Vamos criar um novo componente o List.js
+
+Agora na hora de retornar nao colocaremos um <div> mas sim apenas <>
+
+    function List() {
+        return (
+            <>
+                <ul>
+                    <li>item 1</li>
+                </ul>
+            </>
+        )
+    }
+
+    export default List
+
+Agora iremos importar no App.js e colocar ela no template
