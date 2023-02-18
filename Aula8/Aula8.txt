@@ -1,2 +1,30 @@
 Avançando em Props
 
+    - Podemos definir tipos para props, realizando uma especie de avaliação
+    - Defenimos em um objeto chamado propType própio componente
+    - E ainda há possibilidade de definir um valor padrão
+    - Neste caso defenimos o defaultProps
+
+Pratica
+
+No list.js vamos adicionar mais uma propiedade
+
+E vamos importar o PropType
+
+    import PropTypes from 'prop-types'
+
+agora antes do export default vamos colocar uma instancia que vai receber um dict
+
+    List.propTypes = {
+        
+    }
+
+e com isso dizemos qual prop precisa de um types
+
+    marca: PropTypes.string,
+
+
+podemos até colocar se é preciso como a instancia (.isRequired)
+
+E podemos fazer o DefaultProps fazendo a mesma coisa mas enves de .propTypes colocar .defaulProps assim o componente ja vem com valor padrao
+

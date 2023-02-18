@@ -10,7 +10,8 @@ return (
     <HelloWorld/>
     <SayMyName nome="Joao"/>
     <Pessoa nome="Andre" idade="20" profissao="Marceneiro" foto="https://via.placeholder.com/150"/>
-    <List/>
+    <List marca="Ferrari" ano_lancamento={2019}/>
+    <List />
   </div>
   );
 }
