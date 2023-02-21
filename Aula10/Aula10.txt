@@ -1,0 +1,26 @@
+useState na prática
+
+    - O useState é um hook do React
+    - Com ele conseguimos manusear o estado de um componente de forma simples
+    - Este hook funciona muito com bem com eventos
+    - Podemos atrelar um evento a mudança de state
+
+Pratica
+
+Para usar o useState precisamos importar ele primeiro
+
+    import { useState } from 'react'
+
+Vamo criar 2 variaveis constantes (name) para pegar o nome do form e (setName) para setar o nome
+
+    const [name, setName] = useState()
+
+Mas no campo input que nós queremos nos coloquemos um atributo onChange para quando o campo ser alterado executar um funcao local e setar o nome
+
+    <input type="text" id='name' name='name' placeholder="Digite seu nome" onChange={(e) => setName(e.target.value)}/>
+
+Vamos fazer a mesma coisa no campo de password
+
+    const [password, setPassword] = useState()
+
+    
