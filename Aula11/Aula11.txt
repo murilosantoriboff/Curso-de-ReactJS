@@ -1,0 +1,29 @@
+Passar eventos por props
+
+    - Os metodos também podem ser passados por props
+    - Ou seja, um componente filho pode ativar o método do seu ancestral 
+    - Vamos acessar um metodo por meio de um evento
+    - A sintaxe é a mesma de uma props de dados: props.meuEvento
+
+Pratica
+
+Podemos colocar usar um componente filho para executar tarefas separadas e especificas
+
+Por exemplo: Criamos um componente filho chamando Button e vamos passar props para ele
+
+    function Button(props) {
+        return <button onClick={props.event}>{props.text}</button>
+    }
+
+    export default Button
+
+Agora no componente pai, importamos ele e usamos ele com as propiedades q passsamos na props e chamando a funcao que criamos no componente pai
+
+    import Button from "./Button"
+
+    function meu_evento() {
+        console.log('Fui Ativado')
+    }
+
+    <Button event={meu_evento} text='Primeiro evento'/>
+
