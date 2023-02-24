@@ -1,0 +1,67 @@
+Renderização condicional (if)
+
+    - Podemos Atrelar a exibição de algum elemento a um if
+    - Esta ação é chamada de renderização condicional
+    - Envolvemos as tags entre {}
+    - Como as chaves executam JavaScript, criamos nossa condição
+    - É possivel usar o (state) para criar as condições
+
+Pratica
+
+Criaremos um componente novo e limparemos o App.js
+
+Dentro do nosso componente vamo import o useState
+
+Criaremos um form de email para o usuario preencher e um state para setar o email
+
+    import {useState} from 'react'
+
+    function Condicional() {
+        
+        const [email, setEmail] = useState()
+        
+
+        function enviarEmail(e) {
+            e.preventDefault()
+
+            
+        }
+        
+        return (
+            <div>
+                <h2>Cadastre seu email</h2>
+                <form>
+                    <input placeholder='Digite seu email' type='email' onChange={(e) => setEmail(e.target.value)}/>
+                    <button type='submit' onClick={enviarEmail}>Enviar E-mail</button>
+                </form>
+            </div>
+        )
+    }
+
+    export default Condicional
+
+Agora vamos analisar o email do user
+
+    const [userEmail, setUserEmail] = useState()
+
+    function enviarEmail(e) {
+        e.preventDefault()
+        setUserEmail(email)
+        console.log(userEmail)        
+    }
+
+Agora vamos adicionar uma condicional 
+
+    {userEmail && (
+        <div>
+            E email está preenchido
+        </div>
+    )}
+
+E agora vamos adicionar um funcionalidade para limpar o form
+
+    function limparEmail() {
+        setUserEmail('')
+    }
+
+    <button onClick={limparEmail}>Limpar Email</button>
