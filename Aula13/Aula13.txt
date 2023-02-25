@@ -1,0 +1,32 @@
+Renderização de listas
+
+    - Para renderizar um lista vamos primeiro precisar de um array (lista)
+    - Depois utilizamos a função map, para percorrer cada item
+    - Podendo assim renderizar algo na tela
+    - É possivel unir operadores condicionais com a renderizacao de listas
+
+Pratica
+
+Vamos criar outro componente para renderizacao de listas
+
+    function OutraLista({itens}) {
+        return (
+            <>
+                <h3>Lista de coisas boas</h3>
+                {
+                    itens.map((item) => (
+                        <p>{item}</p>
+                    ))
+                }
+            </>
+        )
+    }
+
+    export default OutraLista
+
+Agora vamos adicionar no App.js e ja passar os itens como argumento
+
+    <OutraLista itens={meusItens}/>
+
+    const meusItens = ['React', 'Vue', 'Angular']
+
