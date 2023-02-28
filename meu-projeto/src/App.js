@@ -1,19 +1,13 @@
 import './App.css';
-import SeuNome from './components/SeuNome';
-import {useState} from 'react'
-
+import {BrowserRouter as Router} from 'react-router-dom'
 
 function App() {
 
-  const [nome, setNome] = useState()
-
-return (
-  <div className="App">
-    <h1>State Lift</h1>
-    <SeuNome setNome={setNome}/>
-    {nome}
-  </div>
-  );
+  return (
+      <div className="App">
+              
+      </div>
+    );
 }
 
 export default App;

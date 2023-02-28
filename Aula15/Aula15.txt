@@ -1,0 +1,9 @@
+Implementando o React Router
+
+    - O React Router é um pacote de mudança de URL's da aplicação
+    - Podemos assim acessar outras views, sem o page reload
+    - Trocando apenas uma parte do layout da aplicacao, ou seja, o que muda de view para view
+    - E precisamos instalar este pacote no projeto
+    - E também realizar algumas mudanças em como App é estruturado
+
+    
